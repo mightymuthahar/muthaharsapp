@@ -36,7 +36,7 @@ const Newsapp=()=>{
         <>
         <div id="id1">
             <img src="n2.png" id="id5"></img>
-            <h2 id="id2">MUTHAHAR'S NATIONAL REPORTS</h2>
+            <h2 id="id2">MUTHAHAR'S NATIONAL REPORT</h2>
             <div id="id6">
                 <img src="n1 (1).png" id="id7"></img>
                 <p id="id8">Get App</p>
