@@ -35,19 +35,19 @@ const Newsapp=()=>{
     return(
         <>
         <div id="id1">
-            <img src="n2.png" id="id5"></img>
+            <img src="n2.png" id="id5" alt="unable to display"></img>
             <h2 id="id2">MUTHAHAR'S NATIONAL REPORTS</h2>
             <div id="id6">
-                <img src="n1 (1).png" id="id7"></img>
+                <img src="n1 (1).png" id="id7" alt="unable to display"></img>
                 <p id="id8">Get App</p>
                 </div>&nbsp; &nbsp;
-                <img id="id9" src="n3.png"></img>
+                <img id="id9" src="n3.png" alt="unable to display"></img>
                 </div>
             <div id="id4">
                 {
-                    categories.map((item)=>{
+                    categories.map((item,index)=>{
                         return(
-                            <button className={(category==item)? "btn btn-danger":"btn btn-primary"} style={{margin:10}} onClick={()=>{setcategory(item)}} >{item}</button>
+                            <button className={(category===item)? "btn btn-danger":"btn btn-primary"} style={{margin:10}} onClick={()=>{setcategory(item)}} key={index} >{item}</button>
                         )
                     })
                 }
@@ -83,8 +83,8 @@ const Newsapp=()=>{
                 {
                     news.map((item,ind)=>{
                         return(
-                            <div className="card" style={{width:"18rem",margin:10,backgroundColor:"greenyellow"}} key={item}>
-                            <img className="card-img-top" src={item.urlToImage} alt="Unable to display image"></img>
+                            <div className="card" style={{width:"18rem",margin:10,backgroundColor:"greenyellow"}} key={ind}>
+                            <img className="card-img-top" src={item.urlToImage} alt="Unable to display"></img>
                             <div className="card-body">
                               <h5 className="card-title">{item.title}</h5>
                               <p className="card-text">{item.description }</p>
