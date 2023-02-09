@@ -73,7 +73,6 @@ const Newsapp=()=>{
         setpagenum(res.selected+1);
     }}
     /></div>
-
            {
             loaders ? (<div className="spinner-border" role="status" >
             
@@ -82,9 +81,9 @@ const Newsapp=()=>{
            
             <div id="id3">
                 {
-                    news.map((item)=>{
+                    news.map((item,ind)=>{
                         return(
-                            <div className="card" style={{width:"18rem",margin:10,backgroundColor:"greenyellow"}}>
+                            <div className="card" style={{width:"18rem",margin:10,backgroundColor:"greenyellow"}} key={item}>
                             <img className="card-img-top" src={item.urlToImage} alt="Unable to display image"></img>
                             <div className="card-body">
                               <h5 className="card-title">{item.title}</h5>
