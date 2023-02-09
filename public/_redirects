@@ -1,1 +1,3 @@
 /*/index.html 200
+/api/* https://newsapi.org/v2/top-headlines/:splat 200!
+
